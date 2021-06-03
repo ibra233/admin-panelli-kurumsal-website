@@ -20,4 +20,17 @@ return redirect('ürünliste')->with('succes','Silme işlemi başarıyla gerçek
         }
         
     }
+    public function deleteCategory($id){
+
+     
+        
+        $query=DB::table('kategoriler')->where('kategori_id',$id)->delete();
+        if($query){
+return redirect('kategoriliste')->with('succes','Silme işlemi başarıyla gerçekleşti');
+        }else{
+            return redirect('kategoriliste')->with('fail','Silme işlemi gerçekleşmedi');
+        }
+        
+    }
 }
+

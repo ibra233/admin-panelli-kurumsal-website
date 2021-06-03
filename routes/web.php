@@ -28,4 +28,12 @@ Route::post('addProduct/','App\Http\Controllers\KategoriController@addProduct')-
 
 Route::get('ürünliste/','App\Http\Controllers\ListController@productList')->name('productList');
 
+Route::get('kategoriliste/','App\Http\Controllers\ListController@categoryList')->name('kategoriliste');
+
 Route::get('deleteList/{id}','App\Http\Controllers\DeleteController@deleteProduct')->name('deleteList');
+
+Route::post('updateProduct/{id?}','App\Http\Controllers\UpdateController@updateProduct')->name('updateProduct');
+
+Route::get('deleteCategory/{id}','App\Http\Controllers\DeleteController@deleteCategory')->name('deleteCategory');
+
+Route::post('updateCategory/{id?}','App\Http\Controllers\UpdateController@updateCategory')->name('updateProduct');
