@@ -25,3 +25,7 @@ Route::get('ürünekle', 'App\Http\Controllers\KategoriController@productShow')-
 Route::post('addCategory/','App\Http\Controllers\KategoriController@addCategory')->name('addCategory');
 
 Route::post('addProduct/','App\Http\Controllers\KategoriController@addProduct')->name('addProduct');
+
+Route::get('ürünliste/','App\Http\Controllers\ListController@productList')->name('productList');
+
+Route::get('deleteList/{id}','App\Http\Controllers\DeleteController@deleteProduct')->name('deleteList');

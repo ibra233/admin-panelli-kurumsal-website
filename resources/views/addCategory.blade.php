@@ -2,8 +2,7 @@
 @section('title','Kategori ekle')
 
 @section('body')
-<div class="content-wrapper">
-<section class="content">
+
 @if (Session::get('succes'))
  
  <div class="alert alert-primary">
@@ -63,8 +62,7 @@
             </div>
             </div>
             </div>
-            </section>
-            </div>
+            
             <!-- <script>
 document.querySelector('.custom-file-input').addEventListener('change',function(e){
   var fileName = document.getElementById("exampleInputFile").files[0].name;
