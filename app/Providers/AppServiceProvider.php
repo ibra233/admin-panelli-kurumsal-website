@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\DB;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +25,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+     $time=DB::table('calisma_saat')->first();
+
+     view()->share('workTime', $time);
+
+     $contact=DB::table('iletisim')->first();
+     view()->share('contact',$contact);
     }
 }

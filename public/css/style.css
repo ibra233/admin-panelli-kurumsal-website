@@ -9,4 +9,31 @@ h4 {
 .table-image td, .table-image th {
   vertical-align: middle;
 }
+
+.resimsil {
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.resimsil:hover {
+  width: 23rem !important;
+}
+
+.resimsil:hover .ikonsil {
+  display: inline;
+}
+
+.resimsil a {
+  z-index: 999;
+}
+
+.ikonsil {
+  display: none;
+  color: red;
+  font-size: large;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 /*# sourceMappingURL=style.css.map */
